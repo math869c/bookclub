@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "image": "images/demo/books/636541388748249933-EDUCATED-Cover.jpg.webp",
+    "picked_by": "Nikolaj",
+    "ratings": [1, 2, 3, 4],
+    "comments": [
+      "Powerful and inspiring.",
+      "Great storytelling but a bit slow in the middle.",
+      "One of my favorite memoirs.",
+      "Eye-opening and well written."
+    ]
+  },
+  {
+    "title": "Kældermennesket",
+    "author": "Fyodor Dostoveskij",
+    "image": "images/demo/books/kaldermennesket.jpeg",
+    "picked_by": "Mathias",
+    "ratings": [3, 9, 5, 4],
+    "comments": [
+      "A bit dense but thought-provoking.",
+      "Classic Dostoevsky—intense and dark.",
+      "Too philosophical for my taste.",
+      "Interesting perspective on isolation."
+    ]
+  },
+  {
+    "title": "All Boys Aren't Blue",
+    "author": "George M. Johnson",
+    "image": "images/demo/books/all_boys_arent_blue.jpg",
+    "picked_by": "Toke",
+    "ratings": [3, 2, 8, 6],
+    "comments": [
+      "A bit dense but thought-provoking.",
+      "Classic Dostoevsky—intense and dark.",
+      "Too philosophical for my taste.",
+      "Interesting perspective on isolation."
+    ]
+  },
+  {
+    "title": "Supertrends",
+    "author": "Lars Tvede",
+    "image": "images/demo/books/supertrends.jpg",
+    "picked_by": "Toke",
+    "ratings": [2, 1, 5, 4],
+    "comments": [
+      "A bit dense but thought-provoking.",
+      "Classic Dostoevsky—intense and dark.",
+      "Too philosophical for my taste.",
+      "Interesting perspective on isolation."
+    ]
+  },
+  {
+    "title": "Man's Search for Meaning",
+    "author": "Viktor Frankl",
+    "image": "images/demo/books/man-s-search-for-meaning-1.jpg",
+    "picked_by": "Oliver",
+    "ratings": [1, 4, 7, 8],
+    "comments": [
+      "A bit dense but thought-provoking.",
+      "Classic Dostoevsky—intense and dark.",
+      "Too philosophical for my taste.",
+      "Interesting perspective on isolation."
+    ]
+  },
+  {
+    "title": "Power and Progress",
+    "author": "Daron Acemoglu and Simon Johnson",
+    "image": "images/demo/books/power_and_progress.jpeg",
+    "picked_by": "Marius",
+    "ratings": [9, 8, 2, 1],
+    "comments": [
+      "A bit dense but thought-provoking.",
+      "Classic Dostoevsky—intense and dark.",
+      "Too philosophical for my taste.",
+      "Interesting perspective on isolation."
+    ]
+  },
+  {
+    "title": "Underskud",
+    "author": "Emma Holten",
+    "image": "images/demo/books/underskud.jpeg",
+    "picked_by": "Mathias",
+    "ratings": [2, 1, 3, 2],
+    "comments": [
+      "A bit dense but thought-provoking.",
+      "Classic Dostoevsky—intense and dark.",
+      "Too philosophical for my taste.",
+      "Interesting perspective on isolation."
+    ]
+  }
+]

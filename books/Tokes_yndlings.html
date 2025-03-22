@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tokes Yndlingsbøger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../layout/styles/layout.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper row2">
+        <nav id="mainav" class="hoc clear">
+            <ul class="clear">
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="../books.html">Vores Bøger</a></li>
+                <li><a class="drop" href="#">Yndlings Bøger</a>
+                    <ul>
+                        <li><a href="de_bedste.html">Højeste Ratings</a></li>
+                        <li><a href="nikolajs_yndlings.html">Nikolaj</a></li>
+                        <li><a href="Tokes_yndlings.html">Toke</a></li>
+                        <li><a href="Marius_yndlings.html">Marius</a></li>
+                        <li><a href="Mathias_yndlings.html">Mathias</a></li>
+                    </ul>
+                </li>
+                <li><a class="drop" href="#">Bøger Valgt Af</a>
+                    <ul>
+                        <li><a href="../personer/Nikolaj.html">Nikolaj</a></li>
+                        <li><a href="../personer/Toke.html">Toke</a></li>
+                        <li><a href="../personer/Marius.html">Marius</a></li>
+                        <li><a href="../personer/Mathias.html">Mathias</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrapper row4">
+        <div class="hoc container clear">
+            <h2 class="center">Tokes Yndlingsbøger</h2>
+            <ul id="favorite-books" class="book-grid nospace elements">
+                <!-- Books load here -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper row5">
+        <div id="copyright" class="hoc clear">
+            <p class="fl_left">Copyright &copy; 2025 - All Rights Reserved - Pedggie</p>
+        </div>
+    </div>
+
+    <script>
+        fetch('../data/books.json')
+            .then(res => res.json())
+            .then(books => {
+                const container = document.getElementById('favorite-books');
+
+                // Sort all books based on the first person's rating (descending order)
+                const sortedBooks = books.sort((a, b) => b.ratings[1] - a.ratings[1]);
+
+                sortedBooks.forEach(book => {
+                    const li = document.createElement('li');
+                    li.className = 'full_width';
+
+                    // Calculate average rating
+                    const avgRating = (book.ratings.reduce((sum, rating) => sum + rating, 0) / book.ratings.length).toFixed(1);
+
+                    li.innerHTML = `
+                  <article class="book-card">
+                    <figure>
+                      <img src="../${book.image}" alt="${book.title}" class="uniform-book-image">
+                      <figcaption><a href="#">${book.title} &raquo;</a></figcaption>
+                    </figure>
+                    <div class="txtwrap">
+                      <h6 class="heading">${book.title}</h6>
+                      <p><strong>Gns. rating:</strong> ${avgRating}/10</p>
+                      <p><strong>Første rating:</strong> ${book.ratings[0]}/10</p>
+                    </div>
+                  </article>
+                `;
+
+                    container.appendChild(li);
+                });
+            });
+    </script>
+
+</body>
+
+</html>

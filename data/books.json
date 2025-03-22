@@ -10,7 +10,8 @@
       "Great storytelling but a bit slow in the middle.",
       "One of my favorite memoirs.",
       "Eye-opening and well written."
-    ]
+    ],
+    "html_link": "educated.html"
   },
   {
     "title": "Kældermennesket",
@@ -23,7 +24,8 @@
       "Classic Dostoevsky—intense and dark.",
       "Too philosophical for my taste.",
       "Interesting perspective on isolation."
-    ]
+    ],
+    "html_link": "kldermennesket.html"
   },
   {
     "title": "All Boys Aren't Blue",
@@ -36,7 +38,8 @@
       "Classic Dostoevsky—intense and dark.",
       "Too philosophical for my taste.",
       "Interesting perspective on isolation."
-    ]
+    ],
+    "html_link": "all_boys_arent_blue.html"
   },
   {
     "title": "Supertrends",
@@ -49,7 +52,8 @@
       "Classic Dostoevsky—intense and dark.",
       "Too philosophical for my taste.",
       "Interesting perspective on isolation."
-    ]
+    ],
+    "html_link": "supertrends.html"
   },
   {
     "title": "Man's Search for Meaning",
@@ -62,7 +66,8 @@
       "Classic Dostoevsky—intense and dark.",
       "Too philosophical for my taste.",
       "Interesting perspective on isolation."
-    ]
+    ],
+    "html_link": "mans_search_for_meaning.html"
   },
   {
     "title": "Power and Progress",
@@ -75,7 +80,8 @@
       "Classic Dostoevsky—intense and dark.",
       "Too philosophical for my taste.",
       "Interesting perspective on isolation."
-    ]
+    ],
+    "html_link": "power_and_progress.html"
   },
   {
     "title": "Underskud",
@@ -88,6 +94,7 @@
       "Classic Dostoevsky—intense and dark.",
       "Too philosophical for my taste.",
       "Interesting perspective on isolation."
-    ]
+    ],
+    "html_link": "underskud.html"
   }
 ]

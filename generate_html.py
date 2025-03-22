@@ -35,19 +35,19 @@ book_template = """<!DOCTYPE html>
             <li><a href="books.html">Vores Bøger</a></li>
             <li><a class="drop" href="#">Yndlings Bøger</a>
                 <ul>
-                    <li><a href="books/de_bedste.html">Højeste Ratings</a></li>
-                    <li><a href="books/nikolajs_yndlings.html">Nikolaj</a></li>
-                    <li><a href="books/Tokes_yndlings.html">Toke</a></li>
-                    <li><a href="books/Marius_yndlings.html">Marius</a></li>
-                    <li><a href="books/Mathias_yndlings.html">Mathias</a></li>
+                    <li><a href="../books/de_bedste.html">Højeste Ratings</a></li>
+                    <li><a href="../books/nikolajs_yndlings.html">Nikolaj</a></li>
+                    <li><a href="../books/Tokes_yndlings.html">Toke</a></li>
+                    <li><a href="../books/Marius_yndlings.html">Marius</a></li>
+                    <li><a href="../books/Mathias_yndlings.html">Mathias</a></li>
                 </ul>
             </li>
             <li><a class="drop" href="#">Bøger Valgt Af</a>
                 <ul>
-                    <li><a href="personer/Nikolaj.html">Nikolaj</a></li>
-                    <li><a href="personer/Toke.html">Toke</a></li>
-                    <li><a href="personer/Marius.html">Marius</a></li>
-                    <li><a href="personer/Mathias.html">Mathias</a></li>
+                    <li><a href="../personer/Nikolaj.html">Nikolaj</a></li>
+                    <li><a href="../personer/Toke.html">Toke</a></li>
+                    <li><a href="../personer/Marius.html">Marius</a></li>
+                    <li><a href="../personer/Mathias.html">Mathias</a></li>
                 </ul>
             </li>
         </ul>

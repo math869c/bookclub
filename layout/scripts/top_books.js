@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <article class="book-card">
             <figure>
               <img src="${book.image}" alt="${book.title}" class = "uniform-book-image">
-              <figcaption><a href="${book.overview}">${book.title} &raquo;</a></figcaption>
+              <figcaption><a href="../books_html/${book.html_link}">${book.title} &raquo;</a></figcaption>
             </figure>
             <div class="txtwrap">
               <h6 class="heading">${book.title}</h6>

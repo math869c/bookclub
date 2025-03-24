@@ -1,38 +1,10 @@
 [
   {
-    "title": "Educated",
-    "author": "Tara Westover",
-    "image": "images/demo/books/636541388748249933-EDUCATED-Cover.jpg.webp",
-    "picked_by": "Nikolaj",
-    "ratings": [1, 2, 3, 4],
-    "comments": [
-      "Powerful and inspiring.",
-      "Great storytelling but a bit slow in the middle.",
-      "One of my favorite memoirs.",
-      "Eye-opening and well written."
-    ],
-    "html_link": "educated.html"
-  },
-  {
-    "title": "Kældermennesket",
-    "author": "Fyodor Dostoveskij",
-    "image": "images/demo/books/kaldermennesket.jpeg",
-    "picked_by": "Mathias",
-    "ratings": [3, 9, 5, 4],
-    "comments": [
-      "A bit dense but thought-provoking.",
-      "Classic Dostoevsky—intense and dark.",
-      "Too philosophical for my taste.",
-      "Interesting perspective on isolation."
-    ],
-    "html_link": "kldermennesket.html"
-  },
-  {
     "title": "All Boys Aren't Blue",
     "author": "George M. Johnson",
     "image": "images/demo/books/all_boys_arent_blue.jpg",
     "picked_by": "Toke",
-    "ratings": [3, 2, 8, 6],
+    "ratings": [0, 0, 0, 0],
     "comments": [
       "A bit dense but thought-provoking.",
       "Classic Dostoevsky—intense and dark.",
@@ -42,16 +14,58 @@
     "html_link": "all_boys_arent_blue.html"
   },
   {
+    "title": "Underskud",
+    "author": "Emma Holten",
+    "image": "images/demo/books/underskud.jpeg",
+    "picked_by": "Mathias",
+    "ratings": [5, 3.5, 3.5, 2],
+    "comments": [
+      "Spændende, men hun forstår ikke økonomi",
+      "Hun skaber et forkert billede af økonomi",
+      "Jeg havde regnet med mere",
+      "Emnet har kæmpe potentiale, men så skuffende"
+    ],
+    "html_link": "underskud.html"
+  },
+  {
+    "title": "Power and Progress",
+    "author": "Daron Acemoglu and Simon Johnson",
+    "image": "images/demo/books/power_and_progress.jpeg",
+    "picked_by": "Marius",
+    "ratings": [4.5, 6, 5, 2],
+    "comments": [
+      "Kunne skrives meget kortere",
+      "Der er 100 sider, hvor jeg ikke kan huske noget",
+      "Der var for meget om Panamakanalen",
+      "Jeg nægter at læse den"
+    ],
+    "html_link": "power_and_progress.html"
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "image": "images/demo/books/636541388748249933-EDUCATED-Cover.jpg.webp",
+    "picked_by": "Nikolaj",
+    "ratings": [8, 7, 7, 6.5],
+    "comments": [
+      "Endelig en bog, hvor der sker noget",
+      "Fantastisk til at fortælle historier og spændende liv.",
+      "Lægger ikke meget op til diskussion",
+      "Nem at læse, men mangler livstanker"
+    ],
+    "html_link": "educated.html"
+  },
+  {
     "title": "Supertrends",
     "author": "Lars Tvede",
     "image": "images/demo/books/supertrends.jpg",
     "picked_by": "Toke",
-    "ratings": [2, 1, 5, 4],
+    "ratings": [4, 7, 5, 4],
     "comments": [
-      "A bit dense but thought-provoking.",
-      "Classic Dostoevsky—intense and dark.",
-      "Too philosophical for my taste.",
-      "Interesting perspective on isolation."
+      "Kæmpe klimabenægter og selektiv ift fakta",
+      "Hans podcast er meget bedre",
+      "De 50 ting man skal vide om verden, er 50 påstande",
+      "En hurtig bog af en hurtig mand"
     ],
     "html_link": "supertrends.html"
   },
@@ -60,41 +74,27 @@
     "author": "Viktor Frankl",
     "image": "images/demo/books/man-s-search-for-meaning-1.jpg",
     "picked_by": "Oliver",
-    "ratings": [1, 4, 7, 8],
+    "ratings": [6, 8, 5, 7],
     "comments": [
-      "A bit dense but thought-provoking.",
-      "Classic Dostoevsky—intense and dark.",
-      "Too philosophical for my taste.",
-      "Interesting perspective on isolation."
+      "Den lagde op til en mega fed diskussion",
+      "Der er to udgav, vælg den rigtige bog fra starten",
+      "Man kommer lidt tættere på meningen med livet",
+      "Gav en af de dybeste samtaler i mit liv"
     ],
     "html_link": "mans_search_for_meaning.html"
   },
   {
-    "title": "Power and Progress",
-    "author": "Daron Acemoglu and Simon Johnson",
-    "image": "images/demo/books/power_and_progress.jpeg",
-    "picked_by": "Marius",
-    "ratings": [9, 8, 2, 1],
-    "comments": [
-      "A bit dense but thought-provoking.",
-      "Classic Dostoevsky—intense and dark.",
-      "Too philosophical for my taste.",
-      "Interesting perspective on isolation."
-    ],
-    "html_link": "power_and_progress.html"
-  },
-  {
-    "title": "Underskud",
-    "author": "Emma Holten",
-    "image": "images/demo/books/underskud.jpeg",
+    "title": "Kældermennesket",
+    "author": "Fyodor Dostoveskij",
+    "image": "images/demo/books/kaldermennesket.jpeg",
     "picked_by": "Mathias",
-    "ratings": [2, 1, 3, 2],
+    "ratings": [3, 5, 6, 8],
     "comments": [
-      "A bit dense but thought-provoking.",
-      "Classic Dostoevsky—intense and dark.",
-      "Too philosophical for my taste.",
-      "Interesting perspective on isolation."
+      "Virkelig en dårlig bog - al for tung",
+      "Første halvdel er for tung",
+      "Dyster, men smuk",
+      "Tung, men men lærer så meget om sig selv!"
     ],
-    "html_link": "underskud.html"
+    "html_link": "kldermennesket.html"
   }
 ]

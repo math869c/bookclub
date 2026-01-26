@@ -1,2 +1,3 @@
 # bookclub
 For bogklubben
+Link for bogklubben: https://math869c.github.io/bookclub/?fbclid=IwY2xjawPkkKpleHRuA2FlbQIxMABicmlkETFpZ3psM2NJM0hhSGlDT0pJc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHpFXNtn8Ln88e6vAxcRCZB3cjhZQfEI1HAXIi0GhF_YadhqXQZd1rIeNIRyN_aem_ilPSr53ZJODngCInk3JorA

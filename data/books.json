@@ -32,7 +32,7 @@
     "comments": [
       "--- Nikolaj ---",
       "--- Toke ---",
-      "--- Marius ---",
+      "Meget tankevækkende, men for arbitrær historie",
       "Page-turner med masser af dybde og en smule mystik"
     ],
     "html_link": "the_book_of_illusions.html"
@@ -51,7 +51,7 @@
     "comments": [
       "--- Nikolaj ---",
       "--- Toke ---",
-      "--- Marius ---",
+      "Meget relevant, men havde tendens til at være deskriptiv",
       "Mega spændende historie, men manglede en stærke følelsesmæssige forbindelse til nogle af personerne"
     ],
     "html_link": "ddevaskeren.html"
@@ -62,15 +62,15 @@
     "image": "images/demo/books/all_boys_arent_blue.jpg",
     "picked_by": "Toke",
     "ratings": [
-      0,
-      0,
-      0,
-      0
+      7.5,
+      6.5,
+      5,
+      5
     ],
     "comments": [
       "--- Nikolaj ---",
       "--- Toke ---",
-      "--- Marius ---",
+      "Eksotisk emne, men plottet var uklart",
       "Skuffede lidt og manglede noget dramatik og et stærkere plot"
     ],
     "html_link": "all_boys_arent_blue.html"
@@ -89,7 +89,7 @@
     "comments": [
       "--- Nikolaj ---",
       "--- Toke ---",
-      "--- Marius ---",
+      "Fed debat, men økonomisk grundlag er så tyndt, at argumenter ikke kan tages seriøst",
       "Emnet har kæmpe potentiale, men så skuffende"
     ],
     "html_link": "underskud.html"
@@ -108,7 +108,7 @@
     "comments": [
       "--- Nikolaj ---",
       "--- Toke ---",
-      "--- Marius ---",
+      "Tung og for meget japperi",
       "Jeg nægter at læse den"
     ],
     "html_link": "power_and_progress.html"
@@ -116,7 +116,7 @@
   {
     "title": "Educated",
     "author": "Tara Westover",
-    "image": "images/demo/books/636541388748249933-EDUCATED-Cover.jpg.webp",
+    "image": "images/demo/books/educated.jpg",
     "picked_by": "Nikolaj",
     "ratings": [
       8,
@@ -127,7 +127,7 @@
     "comments": [
       "--- Nikolaj ---",
       "--- Toke ---",
-      "--- Marius ---",
+      "Rigtig spændende historie, men var for deskriptiv og manglede bredere perspektiver",
       "Nem at læse, men mangler livstanker"
     ],
     "html_link": "educated.html"
@@ -146,7 +146,7 @@
     "comments": [
       "--- Nikolaj ---",
       "--- Toke ---",
-      "--- Marius ---",
+      "Overfladisk - bog baseret på tynde analyser og mavefornemmelser",
       "En hurtig bog af en hurtig mand"
     ],
     "html_link": "supertrends.html"
@@ -165,7 +165,7 @@
     "comments": [
       "--- Nikolaj ---",
       "--- Toke ---",
-      "--- Marius ---",
+      "Meget dyb bog, der sætter tingene i perspektiv",
       "Gav en af de dybeste samtaler i mit liv"
     ],
     "html_link": "mans_search_for_meaning.html"
@@ -184,7 +184,7 @@
     "comments": [
       "--- Nikolaj ---",
       "--- Toke ---",
-      "--- Marius ---",
+      "Oliver",
       "Tung, men man lærer så meget om sig selv!"
     ],
     "html_link": "kldermennesket.html"

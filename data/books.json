@@ -1,15 +1,77 @@
 [
   {
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "image": "images/demo/books/brief_history_of_time.jpg",
+    "picked_by": "Mathias",
+    "ratings": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "comments": [
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
+      "--- Mathias ---"
+    ],
+    "html_link": "a_brief_history_of_time.html"
+  },
+  {
+    "title": "The book of Illusions",
+    "author": "Paul Auster",
+    "image": "images/demo/books/book_of_illusions.jpg",
+    "picked_by": "Marius",
+    "ratings": [
+      7.5,
+      6,
+      7.5,
+      8
+    ],
+    "comments": [
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
+      "Page-turner med masser af dybde og en smule mystik"
+    ],
+    "html_link": "the_book_of_illusions.html"
+  },
+  {
+    "title": "Dødevaskeren",
+    "author": "Sara Omar",
+    "image": "images/demo/books/dodevaskeren.jpg",
+    "picked_by": "Nikolaj",
+    "ratings": [
+      8,
+      7,
+      6,
+      8
+    ],
+    "comments": [
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
+      "Mega spændende historie, men manglede en stærke følelsesmæssige forbindelse til nogle af personerne"
+    ],
+    "html_link": "ddevaskeren.html"
+  },
+  {
     "title": "All Boys Aren't Blue",
     "author": "George M. Johnson",
     "image": "images/demo/books/all_boys_arent_blue.jpg",
     "picked_by": "Toke",
-    "ratings": [0, 0, 0, 0],
+    "ratings": [
+      0,
+      0,
+      0,
+      0
+    ],
     "comments": [
-      "A bit dense but thought-provoking.",
-      "Classic Dostoevsky—intense and dark.",
-      "Too philosophical for my taste.",
-      "Interesting perspective on isolation."
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
+      "Skuffede lidt og manglede noget dramatik og et stærkere plot"
     ],
     "html_link": "all_boys_arent_blue.html"
   },
@@ -18,11 +80,16 @@
     "author": "Emma Holten",
     "image": "images/demo/books/underskud.jpeg",
     "picked_by": "Mathias",
-    "ratings": [5, 3.5, 3.5, 2],
+    "ratings": [
+      5,
+      3.5,
+      3.5,
+      2
+    ],
     "comments": [
-      "Spændende, men hun forstår ikke økonomi",
-      "Hun skaber et forkert billede af økonomi",
-      "Jeg havde regnet med mere",
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
       "Emnet har kæmpe potentiale, men så skuffende"
     ],
     "html_link": "underskud.html"
@@ -32,11 +99,16 @@
     "author": "Daron Acemoglu and Simon Johnson",
     "image": "images/demo/books/power_and_progress.jpeg",
     "picked_by": "Marius",
-    "ratings": [4.5, 6, 5, 2],
+    "ratings": [
+      4.5,
+      6,
+      5,
+      2
+    ],
     "comments": [
-      "Kunne skrives meget kortere",
-      "Der er 100 sider, hvor jeg ikke kan huske noget",
-      "Der var for meget om Panamakanalen",
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
       "Jeg nægter at læse den"
     ],
     "html_link": "power_and_progress.html"
@@ -46,11 +118,16 @@
     "author": "Tara Westover",
     "image": "images/demo/books/636541388748249933-EDUCATED-Cover.jpg.webp",
     "picked_by": "Nikolaj",
-    "ratings": [8, 7, 7, 6.5],
+    "ratings": [
+      8,
+      7,
+      7,
+      6.5
+    ],
     "comments": [
-      "Endelig en bog, hvor der sker noget",
-      "Fantastisk til at fortælle historier og spændende liv.",
-      "Lægger ikke meget op til diskussion",
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
       "Nem at læse, men mangler livstanker"
     ],
     "html_link": "educated.html"
@@ -60,11 +137,16 @@
     "author": "Lars Tvede",
     "image": "images/demo/books/supertrends.jpg",
     "picked_by": "Toke",
-    "ratings": [4, 7, 5, 4],
+    "ratings": [
+      4,
+      7,
+      5,
+      4
+    ],
     "comments": [
-      "Kæmpe klimabenægter og selektiv ift fakta",
-      "Hans podcast er meget bedre",
-      "De 50 ting man skal vide om verden, er 50 påstande",
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
       "En hurtig bog af en hurtig mand"
     ],
     "html_link": "supertrends.html"
@@ -74,11 +156,16 @@
     "author": "Viktor Frankl",
     "image": "images/demo/books/man-s-search-for-meaning-1.jpg",
     "picked_by": "Oliver",
-    "ratings": [6, 8, 5, 7],
+    "ratings": [
+      6,
+      8,
+      5,
+      7
+    ],
     "comments": [
-      "Den lagde op til en mega fed diskussion",
-      "Der er to udgav, vælg den rigtige bog fra starten",
-      "Man kommer lidt tættere på meningen med livet",
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
       "Gav en af de dybeste samtaler i mit liv"
     ],
     "html_link": "mans_search_for_meaning.html"
@@ -88,12 +175,17 @@
     "author": "Fyodor Dostoveskij",
     "image": "images/demo/books/kaldermennesket.jpeg",
     "picked_by": "Mathias",
-    "ratings": [3, 5, 6, 8],
+    "ratings": [
+      3,
+      5,
+      6,
+      8
+    ],
     "comments": [
-      "Virkelig en dårlig bog - al for tung",
-      "Første halvdel er for tung",
-      "Dyster, men smuk",
-      "Tung, men men lærer så meget om sig selv!"
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
+      "Tung, men man lærer så meget om sig selv!"
     ],
     "html_link": "kldermennesket.html"
   }

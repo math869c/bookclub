@@ -31,8 +31,8 @@ book_template = """<!DOCTYPE html>
     <nav id="mainav" class="hoc clear">
         <!-- ################################################################################################ -->
         <ul class="clear">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="books.html">Vores Bøger</a></li>
+            <li class="active"><a href="../index.html">Home</a></li>
+            <li><a href="../books.html">Vores Bøger</a></li>
             <li><a class="drop" href="#">Yndlings Bøger</a>
                 <ul>
                     <li><a href="../books/de_bedste.html">Højeste Ratings</a></li>

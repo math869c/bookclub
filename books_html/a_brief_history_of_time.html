@@ -13,31 +13,40 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row2">
-    <nav id="mainav" class="hoc clear">
-        <!-- ################################################################################################ -->
-        <ul class="clear">
-            <li class="active"><a href="../index.html">Home</a></li>
-            <li><a href="../books.html">Vores Bøger</a></li>
-            <li><a class="drop" href="#">Yndlings Bøger</a>
-                <ul>
-                    <li><a href="../books/de_bedste.html">Højeste Ratings</a></li>
-                    <li><a href="../books/nikolajs_yndlings.html">Nikolaj</a></li>
-                    <li><a href="../books/Tokes_yndlings.html">Toke</a></li>
-                    <li><a href="../books/Marius_yndlings.html">Marius</a></li>
-                    <li><a href="../books/Mathias_yndlings.html">Mathias</a></li>
-                </ul>
-            </li>
-            <li><a class="drop" href="#">Bøger Valgt Af</a>
-                <ul>
-                    <li><a href="../personer/Nikolaj.html">Nikolaj</a></li>
-                    <li><a href="../personer/Toke.html">Toke</a></li>
-                    <li><a href="../personer/Marius.html">Marius</a></li>
-                    <li><a href="../personer/Mathias.html">Mathias</a></li>
-                </ul>
-            </li>
-        </ul>
-        <!-- ################################################################################################ -->
-    </nav>
+        <nav id="mainav" class="hoc clear">
+            <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-menu">
+                Oversigt
+            </button>
+            <!-- ################################################################################################ -->
+            <ul class="clear" id="main-menu">
+                <li class="active"><a href="../index.html">Forside</a></li>
+                <li><a href="../books.html">Vores Bøger</a></li>
+                <li class="has-submenu">
+                    <button type="button" class="submenu-toggle" aria-expanded="false">
+                        Yndlings Bøger
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="../books/de_bedste.html">Højeste Ratings</a></li>
+                        <li><a href="../books/nikolajs_yndlings.html">Nikolaj</a></li>
+                        <li><a href="../books/Tokes_yndlings.html">Toke</a></li>
+                        <li><a href="../books/Marius_yndlings.html">Marius</a></li>
+                        <li><a href="../books/Mathias_yndlings.html">Mathias</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button type="button" class="submenu-toggle" aria-expanded="false">
+                        Bøger Valgt Af
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="../personer/Nikolaj.html">Nikolaj</a></li>
+                        <li><a href="../personer/Toke.html">Toke</a></li>
+                        <li><a href="../personer/Marius.html">Marius</a></li>
+                        <li><a href="../personer/Mathias.html">Mathias</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- ################################################################################################ -->
+        </nav>
 </div>
 
 
@@ -51,10 +60,10 @@
                 </figure>
                 <div class="txtwrap">
                     <p><strong>Forfatter:</strong> Stephen Hawking</p>
-                    <p><strong>Gns. rating:</strong> 0.0/10</p>
+                    <p><strong>Gns. rating:</strong> 6.5/10</p>
                     <h3>Kommentarer</h3>
                     <ul>
-                        <li><strong>Nikolaj:</strong> 0/10 – --- Nikolaj ---</li><li><strong>Toke:</strong> 0/10 – --- Toke ---</li><li><strong>Marius:</strong> 0/10 – --- Marius ---</li><li><strong>Mathias:</strong> 0/10 – --- Mathias ---</li>
+                        <li><strong>Nikolaj:</strong> 4/10 – --- Nikolaj ---</li><li><strong>Toke:</strong> 8/10 – --- Toke ---</li><li><strong>Marius:</strong> 5/10 – --- Marius ---</li><li><strong>Mathias:</strong> 9/10 – Læs et kapitel, gå en tur uden musik, og så lad fantasien løbe fri om fysik og de store spørgsmål</li>
                     </ul>
                 </div>
             </article>
@@ -67,6 +76,65 @@
             <p class="fl_left">Copyright &copy; 2025 - All Rights Reserved - Pedggie</p>
         </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const button = document.querySelector(".mobile-nav-toggle");
+        const menu = document.querySelector("#main-menu");
+
+        if (!button || !menu) return;
+
+        function closeAllSubmenus() {
+          menu.querySelectorAll(".submenu-open").forEach(function (item) {
+            item.classList.remove("submenu-open");
+          });
+
+          menu.querySelectorAll(".submenu-toggle").forEach(function (toggle) {
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        }
+
+        function closeMenu() {
+          menu.classList.remove("is-open");
+          button.setAttribute("aria-expanded", "false");
+          closeAllSubmenus();
+        }
+
+        function openMenu() {
+          menu.classList.add("is-open");
+          button.setAttribute("aria-expanded", "true");
+        }
+
+        button.addEventListener("click", function () {
+          if (menu.classList.contains("is-open")) {
+            closeMenu();
+          } else {
+            openMenu();
+          }
+        });
+
+        menu.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            closeMenu();
+          });
+        });
+
+        menu.querySelectorAll(".submenu-toggle").forEach(function (toggle) {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const parent = toggle.closest(".has-submenu");
+            const isOpen = parent.classList.contains("submenu-open");
+
+            closeAllSubmenus();
+
+            if (!isOpen) {
+              parent.classList.add("submenu-open");
+              toggle.setAttribute("aria-expanded", "true");
+            }
+          });
+        });
+      });
+    </script>
 
 </body>
 </html>

@@ -2,32 +2,28 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('data/books.json')
     .then(response => response.json())
     .then(books => {
-      // Calculate average rating for each book
       books.forEach(book => {
-        const totalRating = book.ratings.reduce((sum, rating) => sum + rating, 0);
-        book.averageRating = totalRating / book.ratings.length;
+        book.averageRating = BookRatings.average(book);
       });
 
-      // Sort books by average rating in descending order
-      books.sort((a, b) => b.averageRating - a.averageRating);
+      const ratedBooks = books
+        .filter(book => book.averageRating !== null)
+        .sort((a, b) => b.averageRating - a.averageRating)
+        .slice(0, 3);
 
-      // Select top three books
-      const topThreeBooks = books.slice(0, 3);
-
-      // Render top three books
       const container = document.querySelector('.nospace.elements');
-      container.innerHTML = ''; // Clear existing content
+      if (!container) return;
+      container.innerHTML = '';
 
-      topThreeBooks.forEach((book, index) => {
-        // Set the correct class name for the first book
+      ratedBooks.forEach((book, index) => {
         const li = document.createElement('li');
         li.className = index === 0 ? 'one_third first' : 'one_third';
 
         li.innerHTML = `
           <article class="book-card">
             <figure>
-              <img src="${book.image}" alt="${book.title}" class = "uniform-book-image">
-              <figcaption><a href="../books_html/${book.html_link}">${book.title} &raquo;</a></figcaption>
+              <img src="${book.image}" alt="${book.title}" class="uniform-book-image">
+              <figcaption><a href="books_html/${book.html_link}">${book.title} &raquo;</a></figcaption>
             </figure>
             <div class="txtwrap">
               <h6 class="heading">${book.title}</h6>

@@ -29,6 +29,7 @@
                         <li><a href="../books/Tokes_yndlings.html">Toke</a></li>
                         <li><a href="../books/Marius_yndlings.html">Marius</a></li>
                         <li><a href="../books/Mathias_yndlings.html">Mathias</a></li>
+                        <li><a href="../books/Olivers_yndlings.html">Oliver</a></li>
                     </ul>
                 </li>
                 <li class="has-submenu">
@@ -40,6 +41,7 @@
                         <li><a href="../personer/Toke.html">Toke</a></li>
                         <li><a href="../personer/Marius.html">Marius</a></li>
                         <li><a href="../personer/Mathias.html">Mathias</a></li>
+                        <li><a href="../personer/Oliver.html">Oliver</a></li>
                     </ul>
                 </li>
             </ul>
@@ -62,39 +64,45 @@
         </div>
     </div>
 
+    <script src="../layout/scripts/book_ratings.js"></script>
     <script>
+        const reviewerName = "Mathias";
+
         fetch('../data/books.json')
             .then(res => res.json())
             .then(books => {
                 const container = document.getElementById('favorite-books');
+                const ratedBooks = books
+                    .map(book => ({ book, review: BookRatings.reviewBy(book, reviewerName) }))
+                    .filter(item => item.review !== null)
+                    .sort((a, b) => b.review.rating - a.review.rating);
 
-                // Sort all books based on the first person's rating (descending order)
-                const sortedBooks = books.sort((a, b) => b.ratings[3] - a.ratings[3]);
+                if (ratedBooks.length === 0) {
+                    container.innerHTML = '<li class="full_width"><p>Ingen ratings er registreret endnu.</p></li>';
+                    return;
+                }
 
-                sortedBooks.forEach(book => {
+                ratedBooks.forEach(({ book, review }) => {
+                    const average = BookRatings.average(book);
                     const li = document.createElement('li');
                     li.className = 'full_width';
-
-                    // Calculate average rating
-                    const avgRating = (book.ratings.reduce((sum, rating) => sum + rating, 0) / book.ratings.length).toFixed(1);
-
                     li.innerHTML = `
-                  <article class="book-card">
-                    <figure>
-                      <img src="../${book.image}" alt="${book.title}" class="uniform-book-image">
-                      <figcaption><a href="../books_html/${book.html_link}">${book.title} &raquo;</a></figcaption>
-                    </figure>
-                    <div class="txtwrap">
-                      <h6 class="heading">${book.title}</h6>
-                      <p><strong>Gns. rating:</strong> ${avgRating}/10</p>
-                      <p><strong>Mathias rating:</strong> ${book.ratings[3]}/10</p>
-                    </div>
-                  </article>
-                `;
-
+                      <article class="book-card">
+                        <figure>
+                          <img src="../${book.image}" alt="${book.title}" class="uniform-book-image">
+                          <figcaption><a href="../books_html/${book.html_link}">${book.title} &raquo;</a></figcaption>
+                        </figure>
+                        <div class="txtwrap">
+                          <h6 class="heading">${book.title}</h6>
+                          <p><strong>Gns. rating:</strong> ${average.toFixed(1)}/10</p>
+                          <p><strong>Mathias rating:</strong> ${review.rating}/10</p>
+                        </div>
+                      </article>
+                    `;
                     container.appendChild(li);
                 });
-            });
+            })
+            .catch(error => console.error('Kunne ikke hente bøger:', error));
     </script>
     <script src="../layout/scripts/jquery.min.js"></script>
     <script>

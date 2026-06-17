@@ -1,20 +1,57 @@
 [
   {
-    "title": "A Brief History of Time",
-    "author": "Stephen Hawking",
-    "image": "images/demo/books/brief_history_of_time.jpg",
-    "picked_by": "Mathias",
+    "title": "Top Five Regrets of the Dying",
+    "author": "Bronnie Ware",
+    "image": "images/demo/books/top_five_regrets_of_dying_people.jpg",
+    "picked_by": "Toke",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Marius",
+      "Mathias",
+      "Oliver"
+    ],
     "ratings": [
-      4,
-      8,
-      5,
-      9
+      7.5,
+      9,
+      7,
+      5.5,
+      4
     ],
     "comments": [
       "--- Nikolaj ---",
       "--- Toke ---",
       "--- Marius ---",
-      "Læs et kapitel, gå en tur uden musik, og så lad fantasien løbe fri om fysik og de store spørgsmål"
+      "--- Mathias ---",
+      "--- Oliver ---"
+    ],
+    "html_link": "top_five_regrets_of_dying_people.html"
+  },
+  {
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "image": "images/demo/books/brief_history_of_time.jpg",
+    "picked_by": "Mathias",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Marius",
+      "Mathias",
+      "Oliver"
+    ],
+    "ratings": [
+      4,
+      8,
+      5,
+      9,
+      9.5
+    ],
+    "comments": [
+      "--- Nikolaj ---",
+      "--- Toke ---",
+      "--- Marius ---",
+      "Læs et kapitel, gå en tur uden musik, og så lad fantasien løbe fri om fysik og de store spørgsmål",
+      ""
     ],
     "html_link": "a_brief_history_of_time.html"
   },
@@ -23,6 +60,12 @@
     "author": "Paul Auster",
     "image": "images/demo/books/book_of_illusions.jpg",
     "picked_by": "Marius",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Marius",
+      "Mathias"
+    ],
     "ratings": [
       7.5,
       6,
@@ -42,6 +85,12 @@
     "author": "Sara Omar",
     "image": "images/demo/books/dodevaskeren.jpg",
     "picked_by": "Nikolaj",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Marius",
+      "Mathias"
+    ],
     "ratings": [
       8,
       7,
@@ -61,6 +110,12 @@
     "author": "George M. Johnson",
     "image": "images/demo/books/all_boys_arent_blue.jpg",
     "picked_by": "Toke",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Marius",
+      "Mathias"
+    ],
     "ratings": [
       7.5,
       6.5,
@@ -80,6 +135,12 @@
     "author": "Emma Holten",
     "image": "images/demo/books/underskud.jpeg",
     "picked_by": "Mathias",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Marius",
+      "Mathias"
+    ],
     "ratings": [
       5,
       3.5,
@@ -99,6 +160,12 @@
     "author": "Daron Acemoglu and Simon Johnson",
     "image": "images/demo/books/power_and_progress.jpeg",
     "picked_by": "Marius",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Marius",
+      "Mathias"
+    ],
     "ratings": [
       4.5,
       6,
@@ -118,6 +185,12 @@
     "author": "Tara Westover",
     "image": "images/demo/books/educated.jpg",
     "picked_by": "Nikolaj",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Marius",
+      "Mathias"
+    ],
     "ratings": [
       8,
       7,
@@ -137,6 +210,12 @@
     "author": "Lars Tvede",
     "image": "images/demo/books/supertrends.jpg",
     "picked_by": "Toke",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Marius",
+      "Mathias"
+    ],
     "ratings": [
       4,
       7,
@@ -156,6 +235,12 @@
     "author": "Viktor Frankl",
     "image": "images/demo/books/man-s-search-for-meaning-1.jpg",
     "picked_by": "Oliver",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Marius",
+      "Mathias"
+    ],
     "ratings": [
       6,
       8,
@@ -175,6 +260,12 @@
     "author": "Fyodor Dostoveskij",
     "image": "images/demo/books/kaldermennesket.jpeg",
     "picked_by": "Mathias",
+    "reviewers": [
+      "Nikolaj",
+      "Toke",
+      "Oliver",
+      "Mathias"
+    ],
     "ratings": [
       3,
       5,
@@ -184,7 +275,7 @@
     "comments": [
       "Tung og deprimerende bog",
       "Tager tid at komme igennem, men resulterer i dybe snakke og protagonistens udfordringer er stadig højtaktuelle",
-      "Oliver",
+      "",
       "Tung, men man lærer så meget om sig selv!"
     ],
     "html_link": "kldermennesket.html"

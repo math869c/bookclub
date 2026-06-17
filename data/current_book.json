@@ -1,10 +1,11 @@
 [
     {
-        "title": "Top Five Regrets of the Dying",
-        "author": "Bronnie Ware",
-        "image": "images/demo/books/top_five_regrets_of_dying_people.jpg",
-        "picked_by": "Toke",
+        "title": "Hamnet",
+        "author": "Maggie O'Farrell",
+        "image": "images/demo/books/hamnet.jpg",
+        "picked_by": "Nikolaj",
         "ratings": [
+            0,
             0,
             0,
             0,
@@ -14,8 +15,9 @@
             "--- Nikolaj ---",
             "--- Toke ---",
             "--- Marius ---",
-            "--- Mathias ---"
+            "--- Mathias ---",
+            "--- Oliver ---"
         ],
-        "html_link": "a_brief_history_of_time.html"
+        "html_link": "hamnet.html"
     }
 ]

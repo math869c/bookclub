@@ -31,6 +31,7 @@
                         <li><a href="../books/Tokes_yndlings.html">Toke</a></li>
                         <li><a href="../books/Marius_yndlings.html">Marius</a></li>
                         <li><a href="../books/Mathias_yndlings.html">Mathias</a></li>
+                        <li><a href="../books/Olivers_yndlings.html">Oliver</a></li>
                     </ul>
                 </li>
                 <li class="has-submenu">
@@ -42,6 +43,7 @@
                         <li><a href="../personer/Toke.html">Toke</a></li>
                         <li><a href="../personer/Marius.html">Marius</a></li>
                         <li><a href="../personer/Mathias.html">Mathias</a></li>
+                        <li><a href="../personer/Oliver.html">Oliver</a></li>
                     </ul>
                 </li>
             </ul>
@@ -68,22 +70,20 @@
         </div>
     </div>
 
+    <script src="../layout/scripts/book_ratings.js"></script>
     <script>
         fetch('../data/books.json')
             .then(res => res.json())
             .then(books => {
                 const container = document.getElementById('favorite-books');
+                const selectedBooks = books.filter(book => book.picked_by === "Mathias");
 
-                // Filter books picked by Nikolaj
-                const favoriteBooks = books.filter(book => book.picked_by === "Mathias");
+                selectedBooks.forEach(book => {
+                    const average = BookRatings.average(book);
+                    if (average === null) return;
 
-                favoriteBooks.forEach(book => {
                     const li = document.createElement('li');
                     li.className = 'full_width';
-
-                    // Calculate average rating
-                    const avgRating = (book.ratings.reduce((sum, rating) => sum + rating, 0) / book.ratings.length).toFixed(1);
-
                     li.innerHTML = `
                       <article class="book-card">
                         <figure>
@@ -92,14 +92,14 @@
                         </figure>
                         <div class="txtwrap">
                           <h6 class="heading">${book.title}</h6>
-                          <p><strong>Average Rating:</strong> ${avgRating}/10</p>
+                          <p><strong>Gns. rating:</strong> ${average.toFixed(1)}/10</p>
                         </div>
                       </article>
                     `;
-
                     container.appendChild(li);
                 });
-            });
+            })
+            .catch(error => console.error('Kunne ikke hente bøger:', error));
     </script>
     <script src="../layout/scripts/jquery.min.js"></script>
     <script>
